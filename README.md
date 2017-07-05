@@ -2,14 +2,30 @@ Anaconda, python and pip Quick practical guide
 ================================================
 Table of contents:
  * [Anaconda, python, pip. Quick practical guide](#anaconda-python-and-pip-quick-practical-guide)
+   * [Download](#download-anaconda)
+   * [Install](#install-anaconda)
+   * [Environments](#anaconda-environments)
+   * [Packages](#anaconda-packages)
+   * [Own packages](#own-packages)
+   * [Remove anaconda](#remove-anaconda)
+   * [Other languages](#other-languages)
+   * [Projects](#projects)
  * [PyCharm configuration](#pycharm)
  * [PyBuilder configuration](#pybuilder)
    * [Urls](#pybuilder-urls)
+   * [Install](#install-pybuilder)
+   * [Create new project](#create-new-project)
+   * [Existing project](#existing-project)
+   * [Describing available tasks](#describing-available-tasks)
+   * [Providing parameters](#providing-parameters)
+   * [IDE integration](#ide-integration)
 
-## Download
+Download anaconda
+-----------------
 Download anaconda from https://www.continuum.io/downloads for windows/mac/linux with python2/python3
 
-## Install
+Install anaconda
+----------------
 Follow the instructions and install it.
 
 ### Check "conda" and "python" are accessible from the command line:
@@ -25,8 +41,8 @@ python --version
 conda update conda
 ```
 
-## Environments 
-
+Anaconda Environments 
+---------------------
 ### Create environment
 
 ```bash
@@ -173,8 +189,8 @@ unset MY_ANACONDA_TEST
 
 Check it works on activate/deactivate the environment
 
-## Packages
-
+Anaconda Packages
+-----------------
 ### Search for package versions
 ```bash
 conda search --full-name <package name>
@@ -255,7 +271,8 @@ conda list --revisions
 conda install --revision 2
 ```
 
-## Creating/Distributing/Using own packages
+Own packages
+------------
 
 ### Create own package
 
@@ -276,20 +293,23 @@ anaconda upload path/to/custom-bundle-0.1.0-0.tar.bz2
 conda install -c <your anaconda.org username> custom-bundle
 ```
 
-## Remove anaconda
+Remove anaconda
+---------------
 `rm -rf <anaconda install directory>`
 Example: `rm -rf ~/anaconda` 
 On Windows remove from the installed programs.
 Example `rmdir /s anaconda`
 
-## Other languages. Like R
+Other languages
+---------------
+Like R
 ```bash
 conda install -c r r-essentials
 conda update -c r r-essentials
 ```
 
-## Projects
-
+Projects
+--------
 ### Create requirements.txt
 
 ```bash
