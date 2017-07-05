@@ -1,7 +1,7 @@
 Anaconda, python and pip Quick practical guide
 ================================================
 Table of contents:
- * [Anaconda, python, pip. Quick practical guide](#anaconda,-python-and-pip-quick-practical-guide)
+ * [Anaconda, python, pip. Quick practical guide](#anaconda-python-and-pip-quick-practical-guide)
 
 ## Download
 Download anaconda from https://www.continuum.io/downloads for windows/mac/linux with python2/python3
