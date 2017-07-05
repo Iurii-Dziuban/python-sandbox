@@ -248,16 +248,19 @@ or
 pip install --upgrade <package name>
 ```
 
-Example: `conda update pip`
+Example: 
+```
+conda update pip
+```
 
 ### Remove package
 ```bash
 conda remove <package name>
 ```
 Example:
-```
-conda remove pip
 ```bash
+conda remove pip
+```
 ## Revisions
 Conda tracks changes in the libraries via revisions
 
@@ -295,10 +298,18 @@ conda install -c <your anaconda.org username> custom-bundle
 
 Remove anaconda
 ---------------
-`rm -rf <anaconda install directory>`
-Example: `rm -rf ~/anaconda` 
+```bash
+rm -rf <anaconda install directory>
+```
+Example: 
+```bash
+rm -rf ~/anaconda
+``` 
 On Windows remove from the installed programs.
-Example `rmdir /s anaconda`
+Example 
+```bash
+rmdir /s anaconda
+```
 
 Other languages
 ---------------
@@ -367,9 +378,14 @@ pyb -P spam="spam message"
 IDE integration
 ---------------
 ### PyCharm (Intellij IDEA)
-build.py: `use_plugin('python.pycharm')`
-Command line: `pyb pycharm_generate`
-
+build.py: 
+```
+use_plugin('python.pycharm')
+```
+Command line: 
+```
+pyb pycharm_generate
+```
 ### PyDev (Eclipse)
 build.py: 
 ```
