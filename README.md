@@ -409,9 +409,9 @@ pyb pydev_generate
 ```
 
 Travis CI integration
-_____________________
+---------------------
 `.travis.yml` file
 
 Coveralls integration
-_____________________
+---------------------
 `pytest` `pytest-cov` libraries
