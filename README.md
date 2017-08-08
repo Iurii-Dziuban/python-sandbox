@@ -61,15 +61,17 @@ conda create --name python3 python=3.6
 `conda info --envs`
 
 ### Activate/Deactivate environment
+
+**(Linux)**
 ```
 source activate [env_name]
 ``` 
-**(Linux)**
 and 
+**(Windows)**
 ```
 activate [env_name]
 ``` 
-**(Windows)**
+
 Example: `source activate python3` and `activate python3`
 
 Check that packages are from the activated env:
