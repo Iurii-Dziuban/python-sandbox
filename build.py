@@ -7,9 +7,6 @@ use_plugin("python.coverage")             # to be able to check test coverage an
 use_plugin("python.distutils")            # to be able to install the package via <python setup.py install>
 use_plugin('python.pycharm')              # PyCharm generate project files
 use_plugin('python.pydev')                # PyDev generate project files
-#use_plugin("python.pylint")              # Find bugs for python. Currently not working
-#use_plugin("python.pychecker")           # Find bugs for python. Currently not working
-
 
 default_task = "publish"
 
@@ -26,13 +23,11 @@ def initialize(project):                  # initialize dependencies, project ver
     project.set_property('unittest_module_glob', '*_tests') #convension over configuration. Configured by default. Only for demo
     project.set_property('coverage_break_build', False)
     project.build_depends_on('mockito')
-    #project.build_depends_on('python.pylint')
-    #project.build_depends_on('python.pychecker')
 
 # test task execution with the following command <pyb_ say_hello -Pspam="spam message">	
 @task("say_hello", description="task example")
 def say_hello (logger, project):          # dependency injection for "logger" and "project"
-    print project.get_property('spam')
-    print "Hello, PyBuilder"
+    print (project.get_property('spam'))
+    print ("Hello, PyBuilder")
     logger.info("I am building {0} in version {1}!".format(project.name, project.version))
     pass
