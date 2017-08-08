@@ -20,6 +20,8 @@ Complete and practical guide how to setup python project
    * [Describing available tasks](#describing-available-tasks)
    * [Providing parameters](#providing-parameters)
    * [IDE integration](#ide-integration)
+   * [Travis CI integration](#tkravis-ci-integration)
+   * [Coveralls integration](#coveralls-integration)
 
 Download anaconda
 -----------------
@@ -398,3 +400,11 @@ Command line:
 ```
 pyb pydev_generate
 ```
+
+Travis CI integration
+_____________________
+`.travis.yml` file
+
+Coveralls integration
+_____________________
+`pytest` `pytest-cov` libraries
