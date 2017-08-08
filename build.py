@@ -21,7 +21,10 @@ url = "https://github.com/Iurii-Dziuban/python-sandbox"
 @init
 def initialize(project):                  # initialize dependencies, project version, properties, licence, etc.
     project.set_property('unittest_module_glob', '*_tests') #convension over configuration. Configured by default. Only for demo
-    project.set_property('coverage_break_build', False)
+    project.set_property('coverage_break_build', True)
+    project.set_property_if_unset("coverage_threshold_warn", 100)
+    project.set_property_if_unset("coverage_branch_threshold_warn", 1)
+    project.set_property_if_unset("coverage_branch_partial_threshold_warn", 1)
     project.build_depends_on('mockito')
 
 # test task execution with the following command <pyb_ say_hello -Pspam="spam message">	
