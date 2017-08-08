@@ -1,6 +1,7 @@
 Anaconda, python and pip Quick practical guide
 ================================================
-Table of contents:
+Complete and practical guide how to setup python project
+## Table of contents:
  * [Anaconda, python, pip. Quick practical guide](#anaconda-python-and-pip-quick-practical-guide)
    * [Download](#download-anaconda)
    * [Install](#install-anaconda)
